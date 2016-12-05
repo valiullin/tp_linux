@@ -1,23 +1,21 @@
-  592  mkdir A.Valiullin
-  593  cd A.Valiullin/
-  594  ps -aux
-  595  ps -aux > ps.out
-  596  ls
-  597  head ps.out
-  598  free -m
-  599  free -m > mem.out
-  600  cat mem.out
-  601  df -h
-  602  df -h > disk.out
-  603  head disk.out 
-  604  mkdir -p dir1/dir3 dir1/dir4 dir1/5
-  605  ls
-  606  tree
-  607  rm -rf dir1
-  608  tree
-  609  mkdir -p dir1/dir3 dir1/dir4 dir1/dir5
-  610  tree
-  611  mkdir -p dir2/dir6 dir2/dir7 dir2/dir8
+  596  clear
+  597  mkdir A.Valiullin
+  598  cd A.Valiullin/
+  599  ps -aux
+  600  ps -aux > ps.out
+  601  ls
+  602  head ps.out
+  603  free -m
+  604  free -m > mem.out
+  605  cat mem.out
+  606  df -h
+  607  df -h > disk.out
+  608  head disk.out
+  609  mkdir dir{1,2}
+  610  ls
+  611  mkdir dir1/dir{3..5}
   612  tree
-  613  history > history.out
+  613  mkdir -p dir2/dir{6..8}
+  614  tree
+  615  history 20 > history.out
 
