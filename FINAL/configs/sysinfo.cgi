@@ -32,9 +32,9 @@ echo "<b>Top talkers по сети (сортировка по убыванию)<
 echo "<br>"
 echo "<b>Статистика по сетевым соединениям</b>"
 echo "TCP"
-cat /proc/net/tcp
+netstat -atn | awk 'NR>1 {print}'
 echo "UDP"
-cat /proc/net/udp
+netstat -aun | awk 'NR>1 {print}'
 echo "Открытые порты"
 netstat -tunl | grep LISTEN
 echo "<br>"
