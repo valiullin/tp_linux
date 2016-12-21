@@ -35,6 +35,8 @@ echo "TCP"
 cat /proc/net/tcp
 echo "UDP"
 cat /proc/net/udp
+echo "Открытые порты"
+netstat -tunl | grep LISTEN
 echo "<br>"
 echo "<b>Средняя загрузка CPU</b>"
 mpstat | awk 'NR>2 {print}'
