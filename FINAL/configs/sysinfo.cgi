@@ -48,5 +48,5 @@ df -ih | grep -v tmpfs
 echo "<br>"
 
 echo "</body>"
-echo "<pre>"
+echo "</pre>"
 echo "</html>"
